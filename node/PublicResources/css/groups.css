@@ -1,0 +1,109 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: aliceblue;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    background-color: lightcoral;
+    padding: 20px;
+}
+
+.user {
+    width: 50px;
+    height: 50px;
+    border: 2px solid grey;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 15px;
+    color: #333;
+}
+
+.search-bar {
+    width: 65%;
+    height: 50px;
+    border: 2px solid grey;
+    border-radius: 30px;
+    padding: 20px;
+}
+
+.newGroup {
+    position: absolute;
+    right: 0px;
+    display: flex;
+    justify-content: center;
+    border: 2px solid grey;
+    width: 150px;
+    padding: 10px;
+    margin: 20px;
+    font-size: 15px;
+}
+
+.firstGroup {
+    display: flex;
+    margin: 100px 20px;
+    padding: auto;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 200px;
+    border: 2px solid grey;
+    border-radius: 10px;
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+}
+
+li {
+    height: 50px;
+}
+
+a {
+    height: 100%;
+    padding: 0 30px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: #333;
+}
+
+.sidebar a:hover {
+    background-color: #f0f0f0;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: aliceblue;
+    backdrop-filter: blur(10px);
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.sidebar li {
+    width: 100%;
+}
+
+.sidebar a {
+    width: 100%;
+}
+

@@ -1,0 +1,16 @@
+{
+    "users": [
+        {
+            "name": "y",
+            "groupName": "Group1"
+        },
+        {
+            "name": "x",
+            "groupName": "Group1"
+        },
+        {
+            "name": "z",
+            "groupName": "Group2"
+        }
+    ]
+}

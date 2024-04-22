@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="../css/login.css">
+</head>
+<body>
+    <div class="main-login">
+        <h1>Sign Up</h1>
+        <div class="input-box">
+            <form action="">
+                <input id="user-name" placeholder="Username" type="text" required>
+            </form>
+        </div>
+        <div class="input-box">
+            <form action="">
+                <input id="password" placeholder="Password" type="password" required>
+            </form>
+        </div>
+        <div class="input-box">
+            <form action="">
+                <input id="passwordRepeat" placeholder="Repeat Password" type="password" required>
+            </form>
+        </div>
+        <div class="input-box">
+            <form action="">
+                <input id="e-mail" placeholder="E-mail" type="text" required>
+            </form>
+        </div>
+        <div class="submit">
+            <input class="btn" id="signup-btn" type="submit" value="Sign Up">
+            <input class="btn" id="login-btn" type="submit" value="Login">
+        </div>
+    </div>
+
+    <script>
+        const signupBtn = document.getElementById('signup-btn');
+        const loginBtn = document.getElementById('login-btn');
+
+        signupBtn.addEventListener("click", function() {
+            window.location.href = "groups.html";
+        });
+
+        loginBtn.addEventListener("click", function() {
+            window.location.href = "login.html";
+        });
+
+    </script> 
+</body>
+</html>

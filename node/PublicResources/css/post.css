@@ -1,0 +1,157 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: aliceblue;
+}
+
+body {
+    height: 100vh;
+}
+
+/* Header */
+header{
+    display: flex;
+    justify-content: space-between;
+    background-color: lightcoral;
+    padding: 20px;
+}
+
+.user {
+    width: 50px;
+    height: 50px;
+    border: 2px solid grey;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 15px;
+    color: #333;
+}
+
+.search-bar {
+    width: 65%;
+    height: 50px;
+    border: 2px solid grey;
+    border-radius: 30px;
+    padding: 20px;
+}
+
+/* All posts*/
+
+.all-posts{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80%;
+}
+
+.firstPost {
+    background: white;
+    width: 70%;
+    height: 80%;
+    border: 2px solid grey;
+}
+
+/* Write post */ 
+
+.post-input-body {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+}
+
+#input-post { 
+    width: 80%;
+    height: 50px; 
+    border: 2px solid gray;
+    border-radius: 10px;
+}
+
+#post-btn {
+    width: 50px;
+    height: 50px;
+    border: 2px solid gray;
+    border-radius: 10px;
+    margin: 0 10px;
+}
+
+
+/* Sidebar */
+
+ul {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+}
+
+li {
+    height: 50px;
+}
+
+a {
+    height: 100%;
+    padding: 0 30px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: #333;
+}
+
+.sidebar a:hover {
+    background-color: #f0f0f0;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: aliceblue;
+    backdrop-filter: blur(10px);
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.sidebar li {
+    width: 100%;
+}
+
+.sidebar a {
+    width: 100%;
+}
+.post-ratings-container{
+    display: flex;
+    justify-content: end;
+    padding: 12px 0 ;
+}
+
+ .post-rating {
+        cursor: pointer;
+    }
+.post-rating-selected > .post-rating-button
+.post-rating-selected > .post-rating-count{
+    color: #009578;
+
+}
+
+ .post-rating:not(:last-child){
+    margin-right: 12px;
+ }
+ .post-rating-button {
+    cursor: pointer;
+    color: rgba(93, 87, 87, 0.54); /* Medium gray color */
+}
+.post-rating:not(.post-rating-selected) > .post-rating-button:hover{
+color: black;
+}
